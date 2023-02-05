@@ -19,15 +19,7 @@ import {
 } from "@mantine/core";
 import LogIn from "../../pages/LogInPage/LogIn";
 import { useDisclosure } from "@mantine/hooks";
-import {
-  IconNotification,
-  IconCode,
-  IconBook,
-  IconChartPie3,
-  IconFingerprint,
-  IconCoin,
-  IconChevronDown,
-} from "@tabler/icons";
+
 import "./navigacija.css";
 import React from "react";
 import FoodSprintLogo from "./FoodSprintLogo";
@@ -195,9 +187,8 @@ function Navigacija() {
                       <Box component="span" mr={5}>
                         Restoran
                       </Box>
-                      <IconChevronDown
-                        size={16}
-                        color={theme.fn.primaryColor()}
+                      size={16}
+                      color={theme.fn.primaryColor()}
                       />
                     </Center>
                   </a>
@@ -286,7 +277,6 @@ function Navigacija() {
                 <Box component="span" mr={5}>
                   Restoran
                 </Box>
-                <IconChevronDown size={16} color={theme.fn.primaryColor()} />
               </Center>
             </UnstyledButton>
             <Collapse in={linksOpened}>{links}</Collapse>

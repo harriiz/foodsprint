@@ -6,7 +6,6 @@ import {
   ThemeIcon,
   MantineProvider,
 } from "@mantine/core";
-import { IconPlus } from "@tabler/icons";
 
 import "./faq.css";
 
@@ -117,9 +116,11 @@ function Faq() {
               variant="separated"
               disableChevronRotation
               chevron={
-                <ThemeIcon radius="xl" className={classes.gradient} size={32}>
-                  <IconPlus size={18} stroke={1.5} />
-                </ThemeIcon>
+                <ThemeIcon
+                  radius="xl"
+                  className={classes.gradient}
+                  size={32}
+                ></ThemeIcon>
               }
             >
               <Accordion.Item className={classes.item} value="reset-password">

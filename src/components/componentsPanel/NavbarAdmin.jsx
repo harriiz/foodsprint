@@ -1,21 +1,6 @@
 import { useState } from "react";
 import { createStyles, Navbar, Group, Code } from "@mantine/core";
-import {
-  IconBellRinging,
-  IconFingerprint,
-  IconKey,
-  IconSettings,
-  Icon2fa,
-  IconDatabaseImport,
-  IconReceipt2,
-  IconSwitchHorizontal,
-  IconLogout,
-  IconHome,
-  IconUsers,
-  IconTruckDelivery,
-  IconChefHat,
-  IconPackage,
-} from "@tabler/icons";
+
 import { MantineLogo } from "@mantine/ds";
 import "./navbarAdmin.css";
 import { useNavigate, useLocation } from "react-router";
@@ -156,7 +141,6 @@ function NavbarAdmin() {
             className={classes.link}
             onClick={(event) => event.preventDefault()}
           >
-            <IconLogout className={classes.linkIcon} stroke={1.5} />
             <span>Odjava</span>
           </a>
         </Navbar.Section>

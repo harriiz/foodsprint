@@ -5,14 +5,7 @@ import {
   MantineProvider,
   Autocomplete,
 } from "@mantine/core";
-import {
-  IconSettings,
-  IconSearch,
-  IconPhoto,
-  IconMessageCircle,
-  IconTrash,
-  IconArrowsLeftRight,
-} from "@tabler/icons";
+
 import { Avatar } from "@mantine/core";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -76,35 +69,25 @@ function ProfileAvatar() {
             <Menu.Divider />
 
             <Link to="profil">
-              <Menu.Item icon={<IconArrowsLeftRight size={14} />}>
-                Moj Profil
-              </Menu.Item>
+              <Menu.Item>Moj Profil</Menu.Item>
             </Link>
             {isRestoran && (
               <Link to="/restoranpanel">
-                <Menu.Item icon={<IconArrowsLeftRight size={14} />}>
-                  Restoran Panel
-                </Menu.Item>
+                <Menu.Item>Restoran Panel</Menu.Item>
               </Link>
             )}
             {isAdmin && (
               <Link to="/panel">
-                <Menu.Item icon={<IconArrowsLeftRight size={14} />}>
-                  Admin Panel
-                </Menu.Item>
+                <Menu.Item>Admin Panel</Menu.Item>
               </Link>
             )}
 
             {isDostavljac && (
               <Link to="/dostavljacpanel">
-                <Menu.Item icon={<IconArrowsLeftRight size={14} />}>
-                  Dostavljac Panel
-                </Menu.Item>
+                <Menu.Item>Dostavljac Panel</Menu.Item>
               </Link>
             )}
-            <Menu.Item color="red" icon={<IconTrash size={14} />}>
-              {logoutButton}
-            </Menu.Item>
+            <Menu.Item color="red">{logoutButton}</Menu.Item>
           </Menu.Dropdown>
         </Menu>
       </MantineProvider>

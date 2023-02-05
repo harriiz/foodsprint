@@ -3,12 +3,7 @@ import { format } from "timeago.js";
 import "./orderBox.css";
 import { Button, Modal } from "@mantine/core";
 import { Timeline, Text } from "@mantine/core";
-import {
-  IconChecks,
-  IconHandGrab,
-  IconTruckDelivery,
-  IconPackage,
-} from "@tabler/icons";
+
 import { useState } from "react";
 import { useEffect } from "react";
 function OrderBox({
@@ -46,7 +41,6 @@ function OrderBox({
       >
         <Timeline active={active} lineWidth={5} bulletSize={30}>
           <Timeline.Item
-            bullet={<IconChecks size={23} />}
             title="Dodijeljeno FoodSprint dostavljaču"
             lineVariant="dashed"
           >
@@ -55,26 +49,20 @@ function OrderBox({
             </Text>
           </Timeline.Item>
 
-          <Timeline.Item
-            title="Preuzeto iz restorana"
-            bullet={<IconHandGrab size={23} />}
-          >
+          <Timeline.Item title="Preuzeto iz restorana">
             <Text color="dimmed" size="sm">
               Dostava je preuzeta iz restorana, možete je očekivati na vašim
               vratima ubrzo!
             </Text>
           </Timeline.Item>
 
-          <Timeline.Item
-            title="U tranzitu"
-            bullet={<IconTruckDelivery size={23} />}
-          >
+          <Timeline.Item title="U tranzitu">
             <Text color="dimmed" size="sm">
               Vaša dostava je u putu.
             </Text>
           </Timeline.Item>
 
-          <Timeline.Item title="Dostavljeno" bullet={<IconPackage size={23} />}>
+          <Timeline.Item title="Dostavljeno">
             <Text color="dimmed" size="sm">
               Dostavljeno, uživajte u hrani!
             </Text>
