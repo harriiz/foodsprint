@@ -1,0 +1,185 @@
+.panel {
+  color: #3b3939;
+  background-color: #f4f5fe;
+}
+
+.headerAdmin {
+  background-color: #f4f5fe;
+}
+
+.statsCardImg {
+  width: 100px;
+  height: 100px;
+}
+
+.statsCards {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.statsCard {
+  border-radius: 50px;
+  background: #f4f5fe;
+  box-shadow: 20px 20px 72px #cfd0d8, -20px -20px 72px #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 240px;
+  height: 240px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.statsCard h3 {
+  color: #777777;
+  font-weight: 500;
+}
+
+.statsCard p {
+  color: #3b3939;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.restoraniPnl {
+  background-color: white;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  align-items: center;
+  padding: 25px 30px;
+  border-radius: 25px;
+  justify-content: space-around;
+  transition: 0.5s;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  z-index: 1000;
+}
+
+.restoraniPnl:hover {
+  transform: translateY(-10px);
+  z-index: 1000;
+}
+
+.novi,
+.uredi {
+  display: block;
+  width: 200px;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.korisnickiPnl {
+  border-left: 20px solid #06a77d;
+}
+
+.Krsnk {
+  background-color: #06a77d;
+}
+
+.Krsnk:hover {
+  background-color: #04644b;
+}
+
+.restoranskiPnl {
+  border-left: 20px solid #87ceeb;
+  z-index: 1000;
+}
+
+.rstrn {
+  background-color: #87ceeb;
+}
+.rstrn:hover {
+  background-color: #29a0cf;
+}
+
+.narudzbeniPnl {
+  border-left: 20px solid #042a2b;
+}
+
+.Nrdzb {
+  background-color: #042a2b;
+}
+.Nrdzb:hover {
+  background-color: #011314;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.restoranskiPnl {
+  box-shadow: #87cfeb60 0px 3px 12px;
+  z-index: 1000;
+}
+
+.korisnickiPnl {
+  box-shadow: #0cb3864f 0px 3px 12px;
+}
+
+.narudzbeniPnl {
+  box-shadow: #053b3d70 0px 3px 12px;
+}
+
+.headerAdmin {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeIcn2 {
+  transition: 0.3s;
+}
+
+.homeIcn2:hover {
+  background-color: #aceebc;
+}
+
+.dodavanjeRestorana {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  background-color: #37b24d;
+  color: rgb(255, 255, 255);
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  gap: 10px;
+}
+
+.btnAddRestoran {
+  background-color: white;
+  color: #37b24d;
+  font-weight: 650;
+}
+
+.btnAddRestoran:hover {
+  border: 1px solid white;
+  background-color: #37b24d;
+  color: white;
+  transition: 0.3s;
+}
+
+.tabelaZahtjevi {
+  margin: 40px 0;
+}
+
+.zhtjvDost {
+  margin-top: 40px;
+}

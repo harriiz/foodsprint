@@ -1,0 +1,101 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.featuresBody {
+  margin-top: 40px;
+  background-color: #40c057;
+  padding-top: 90px;
+  color: #fcf6f5;
+  padding-bottom: 65px;
+}
+
+.korak {
+  padding: 40px;
+  border-radius: 50px;
+  background: #40c057;
+  box-shadow: 20px 20px 60px #36a34a, -20px -20px 60px #4add64;
+}
+
+.korak img {
+}
+
+.featuresDio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featuresKoraci {
+  margin-left: 80px;
+  margin-right: 80px;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  margin-top: 50px;
+}
+
+.featuresDio h1 {
+  font-size: 42px;
+}
+.featuresDio h2 {
+  font-size: 32px;
+}
+
+.korak h2,
+p {
+  text-align: center;
+}
+
+.korak p {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1250px) {
+  .featuresDio h1 {
+    font-size: 28px;
+    margin: 0 20px;
+    text-align: center;
+  }
+  .featuresDio h2 {
+    font-size: 18px;
+    margin: 0 20px;
+  }
+
+  .korak p {
+    font-size: 14px;
+  }
+  .korak h2 {
+    font-size: 17px;
+  }
+}
+
+.korak img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 70%;
+  min-height: 70%;
+}
+
+.korak {
+}
+@media only screen and (max-width: 1024px) {
+  .featuresKoraci {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .korak {
+    max-width: 400px;
+  }
+
+  .korak img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 70%;
+    min-height: 70%;
+  }
+}

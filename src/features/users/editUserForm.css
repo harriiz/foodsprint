@@ -1,0 +1,97 @@
+.form {
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+.form__title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form__action-buttons {
+  display: flex;
+}
+
+.form__action-buttons button {
+  background-color: #5cb85c;
+  border: none;
+  color: rgb(255, 253, 253);
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form__action-buttons button:hover {
+  background-color: #449d44;
+}
+
+.form__label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.form__label .nowrap {
+  font-size: 14px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #333;
+}
+
+.form__input.valid {
+  border: 2px solid #5cb85c;
+}
+
+.form__input.invalid {
+  border: 2px solid #d9534f;
+}
+
+.form__checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.form__checkbox {
+  margin-right: 8px;
+}
+
+.form__select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #333;
+}
+
+.form__select.valid {
+  border: 2px solid #5cb85c;
+}
+
+.form__select.invalid {
+  border: 2px solid #d9534f;
+}
+
+.slikaZahtjev {
+  width: 200px;
+  height: 180;
+}

@@ -1,0 +1,57 @@
+.tableNarudzbe {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 17px;
+  font-weight: 500;
+  table-layout: fixed;
+  text-align: center;
+}
+
+.table__thead {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+}
+
+.table__th {
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+.table__td {
+  text-align: left;
+  overflow-x: scroll;
+}
+
+.table__row:nth-child(even) {
+  background-color: #eeebeb;
+}
+
+.table__button {
+  border-radius: 5px;
+  margin: 5px;
+  border: 0;
+  padding: 10px;
+  background-color: #4caf50;
+  color: rgb(243, 238, 238);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.table__button:hover {
+  background-color: #209224;
+}
+
+td:has(.btn-primary) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.btn-primary {
+  width: 130px;
+  margin: 15px;
+}

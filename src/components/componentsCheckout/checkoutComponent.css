@@ -1,0 +1,14 @@
+.checkoutComponent {
+  display: flex;
+  height: 100vh;
+}
+
+.checkoutMain {
+  width: 70vw;
+}
+
+.checkoutAside {
+  width: 30vw;
+
+  background-color: rgb(255, 255, 255);
+}

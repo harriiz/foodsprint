@@ -1,0 +1,138 @@
+.menuItems {
+  margin-top: 120px;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1300px;
+  justify-content: center;
+  margin: 40px auto;
+  height: 100%;
+}
+
+.menuItemBox {
+  margin-top: 104px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 270px;
+  height: 230px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 20px;
+  position: relative;
+}
+
+.menuItemOstalo {
+  margin-top: 60px;
+}
+
+.menuItemBoxImgH {
+  background-color: white;
+  border-radius: 80px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  width: 180px;
+  height: 160px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItemImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 55px;
+}
+
+.menuCijenaAdd {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  color: rgb(2, 90, 2);
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.menuCijenaAdd button {
+  border: 0;
+  background-color: rgba(94, 243, 101, 0.212);
+  color: rgb(2, 90, 2);
+  font-size: 15px;
+  font-weight: 900;
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.menuTitle {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.boxOpis p {
+  color: #949292;
+  margin-bottom: 5px;
+}
+
+.menuCijena {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.buyIcon {
+  width: 50px;
+}
+
+.kupiMenu {
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.addToCartCont {
+  display: flex;
+  justify-content: center;
+}
+
+.faIcon {
+  color: #40c057;
+  transition: 0.3s;
+}
+
+.faIcon:hover {
+  color: #1c862f;
+}
+
+.kategorijaContainer {
+  border: 1px solid rgb(206, 205, 205);
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+  padding-top: 40px;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+legend {
+  font-size: 26px;
+  font-weight: bolder;
+  color: #3a3939;
+}
+
+@media only screen and (max-width: 1250px) {
+  .menuItems {
+    margin-right: 0px;
+  }
+}

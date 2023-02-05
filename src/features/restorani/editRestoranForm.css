@@ -1,0 +1,71 @@
+/* Form container */
+.restoran-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Form title */
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form input container */
+.form-row {
+  margin-bottom: 20px;
+}
+
+/* Form input field */
+.form-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Form input field on focus */
+.form-input:focus {
+  outline: 0;
+}
+
+/* Form input field error */
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Form select field */
+.form-select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #fff;
+}
+
+.form-button {
+  font-weight: 600;
+  width: 100px;
+  color: white;
+  border: 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #37b24d;
+}
+
+.savedeleteButtons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}

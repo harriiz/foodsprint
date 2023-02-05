@@ -1,0 +1,126 @@
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loginNaslov {
+  max-width: 300px;
+  text-align: center;
+}
+
+.loginLijevo {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 80px;
+  border-radius: 45px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  width: 300px;
+  min-width: 250px;
+}
+
+.loginLijevo > h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: rgb(63, 62, 62);
+}
+
+.loginLijevo > p {
+  font-size: 1.2em;
+  color: rgb(102, 100, 100);
+  max-width: 300px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.input {
+  width: 300px;
+}
+
+.submitForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.submitBtn {
+  background-color: #07a43c;
+  border: 0;
+  height: 55px;
+  border-radius: 10px;
+  color: white;
+  font-size: 27px;
+  text-transform: uppercase;
+  font-weight: 690;
+}
+
+.loginPage {
+  background: linear-gradient(-45deg, #5ef730, #00ff88, #04ff2e, #008552);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 9s ease infinite;
+  animation: gradient 9s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.loginDesno img {
+  width: 700px;
+}
+
+.povratak {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+  font-weight: 600;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.povratak:hover {
+  background-color: rgb(197, 255, 195);
+}

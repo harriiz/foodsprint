@@ -1,0 +1,207 @@
+.haiBg {
+  background-color: #dcffe357;
+  background-image: url(./slike/heroBlurry2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.heroFull {
+  max-width: 1400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-family: roboto;
+  z-index: 2;
+  position: relative;
+  height: 80vh;
+  padding-bottom: 60px;
+}
+
+.heroLijevo {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroText1 {
+  font-size: 52px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.stres {
+  color: red;
+}
+
+.heroText2 {
+  font-size: 57px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.hrana {
+  color: #40c057;
+}
+
+.inputContainer {
+  display: flex;
+  position: relative;
+  margin: 0 20px;
+}
+
+.heroInput {
+  flex-grow: 1;
+  margin-top: 10px;
+  padding: 17px;
+  font-size: 15px;
+  border-radius: 0 0 0 40px;
+  border: 1px solid #b4b4b4;
+  padding-left: 40px;
+  border-right: 0;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.faMarker {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  font-size: 35px;
+  color: #40c057;
+}
+
+.searchBtn {
+  background-color: #40c057;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 0 0 40px 0;
+  cursor: pointer;
+  padding: 0 15px;
+  border: 1px solid #b4b4b4;
+  border-left: 0;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.faSearch {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.heroOpcije {
+  margin-top: 10px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.heroOpcija {
+  font-size: 17px;
+  font-weight: bold;
+  flex-direction: row;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.heroOpcija1 {
+  background-color: rgba(28, 243, 243, 0.322);
+  color: rgb(9, 153, 153);
+}
+
+.heroOpcija2 {
+  background-color: rgba(17, 236, 17, 0.37);
+  color: green;
+}
+
+.heroOpcija3 {
+  background-color: rgba(221, 236, 17, 0.37);
+  color: rgb(124, 124, 12);
+}
+
+.heroImg {
+  max-width: 100%;
+  min-width: 500px;
+}
+
+@media only screen and (max-width: 950px) {
+  .heroImg {
+    display: none;
+  }
+
+  .heroLijevo {
+    margin: 0 auto;
+  }
+}
+
+.blob {
+  max-width: 100%;
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 60px;
+  right: 0;
+  filter: blur(125px);
+}
+
+.custom-shape-divider-bottom-1673782236 {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: #dcffe357;
+}
+
+.custom-shape-divider-bottom-1673782236 svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 113px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1673782236 .shape-fill {
+  fill: #40c057;
+}
+.curved {
+  position: relative;
+  background: #40c057;
+  height: 16vh;
+  border-bottom-left-radius: 50% 28%;
+  border-bottom-right-radius: 50% 28%;
+}
+
+.sectionWrapper1 {
+  position: relative;
+}
+
+.custom-shape-divider-top-1673821439 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1673821439 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 127px;
+}
+
+.custom-shape-divider-top-1673821439 .shape-fill {
+  fill: #ffffff;
+}

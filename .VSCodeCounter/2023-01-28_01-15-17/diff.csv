@@ -1,0 +1,25 @@
+"filename", "language", "JavaScript React", "JavaScript", "CSS", "Markdown", "JSON", "HTML", "Properties", "comment", "blank", "total"
+"d:\maturski\foodsprint_frontend\.env", "Properties", 0, 0, 0, 0, 0, 0, 1, 0, 0, 1
+"d:\maturski\foodsprint_frontend\README.md", "Markdown", 0, 0, 0, 38, 0, 0, 0, 0, 33, 71
+"d:\maturski\foodsprint_frontend\package-lock.json", "JSON", 0, 0, 0, 0, 18004, 0, 0, 0, 1, 18005
+"d:\maturski\foodsprint_frontend\package.json", "JSON", 0, 0, 0, 0, 65, 0, 0, 0, 1, 66
+"d:\maturski\foodsprint_frontend\public\index.html", "HTML", 0, 0, 0, 0, 0, 32, 0, 0, 1, 33
+"d:\maturski\foodsprint_frontend\src\App.js", "JavaScript", 0, 17, 0, 0, 0, 0, 0, 0, 0, 17
+"d:\maturski\foodsprint_frontend\src\components\componentsCheckout\CheckoutItem.jsx", "JavaScript React", -1, 0, 0, 0, 0, 0, 0, 0, 1, 0
+"d:\maturski\foodsprint_frontend\src\components\componentsCheckout\InfoCheckout.jsx", "JavaScript React", 53, 0, 0, 0, 0, 0, 0, 0, 3, 56
+"d:\maturski\foodsprint_frontend\src\components\componentsCheckout\ItemsCheckout.jsx", "JavaScript React", 9, 0, 0, 0, 0, 0, 0, 0, 0, 9
+"d:\maturski\foodsprint_frontend\src\components\componentsCheckout\infoCheckout.css", "CSS", 0, 0, 67, 0, 0, 0, 0, 0, 10, 77
+"d:\maturski\foodsprint_frontend\src\components\componentsDostava\AssignedBoxDostavljac.jsx", "JavaScript React", 54, 0, 0, 0, 0, 0, 0, 0, 8, 62
+"d:\maturski\foodsprint_frontend\src\components\componentsDostava\DostavaComponent.jsx", "JavaScript React", 67, 0, 0, 0, 0, 0, 0, 2, 5, 74
+"d:\maturski\foodsprint_frontend\src\components\componentsDostava\OrderBoxDostavljac.jsx", "JavaScript React", 40, 0, 0, 0, 0, 0, 0, 0, 7, 47
+"d:\maturski\foodsprint_frontend\src\components\componentsMain\MainSearch.jsx", "JavaScript React", 90, 0, 0, 0, 0, 0, 0, 3, 1, 94
+"d:\maturski\foodsprint_frontend\src\components\componentsMain\mainSearch.css", "CSS", 0, 0, 31, 0, 0, 0, 0, 0, 6, 37
+"d:\maturski\foodsprint_frontend\src\components\componentsPanel\OrderBoxAdmin.jsx", "JavaScript React", 2, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"d:\maturski\foodsprint_frontend\src\config\roles.js", "JavaScript", 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+"d:\maturski\foodsprint_frontend\src\features\orders\orderClicked.js", "JavaScript", 0, 11, 0, 0, 0, 0, 0, 0, 0, 11
+"d:\maturski\foodsprint_frontend\src\features\restorani\RestoranOwner.jsx", "JavaScript React", 85, 0, 0, 0, 0, 0, 0, 0, 10, 95
+"d:\maturski\foodsprint_frontend\src\hooks\useAuth.js", "JavaScript", 0, 19, 0, 0, 0, 0, 0, 0, 0, 19
+"d:\maturski\foodsprint_frontend\src\pages\CheckoutPage\CheckoutPage.jsx", "JavaScript React", 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"d:\maturski\foodsprint_frontend\src\pages\DostavljacPage\Dostavljac.jsx", "JavaScript React", 9, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"d:\maturski\foodsprint_frontend\src\pages\checkoutPage\CheckoutPage.jsx", "JavaScript React", -9, 0, 0, 0, 0, 0, 0, 0, -3, -12
+"Total", "-", 408, 48, 98, 38, 18069, 32, 1, 5, 89, 18788

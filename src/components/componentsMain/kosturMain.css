@@ -1,0 +1,95 @@
+.kosturBody {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 76.5%;
+  align-items: center;
+}
+
+.kosturMain {
+  margin: 0 82px;
+}
+
+.kosturMain h1 {
+  font-size: 29px;
+  color: #20272c;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.kategorije {
+  display: flex;
+  gap: 43px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.kategorijaBox img {
+  padding: 10px;
+  border-radius: 34px;
+  width: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+}
+
+.kategorijaTekst {
+  padding: 10px 0;
+  font-size: 1.3em;
+  font-weight: 450;
+}
+
+.slst {
+  margin-left: 4px;
+}
+
+.kategorijaBox:hover {
+  transform: translateY(-9px);
+}
+.kategorijaBox {
+  cursor: pointer;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 18px;
+  padding: 20px;
+  padding-bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  transition: 0.3s;
+}
+
+.kategorijaSelected {
+  background-image: linear-gradient(135deg, #81fbb8 10%, #28c76f 100%);
+  color: white;
+  transform: translateY(-9px);
+}
+
+@media only screen and (max-width: 1060px) {
+  .kategorije {
+    justify-content: center;
+  }
+
+  .kosturMain {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .kategorijaBox img {
+    width: 70px;
+    padding: 10px;
+  }
+
+  .kategorijaBox {
+    width: 110px;
+    font-size: 12px;
+  }
+
+  .kategorije {
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .kosturMain h1 {
+    display: none;
+  }
+}
