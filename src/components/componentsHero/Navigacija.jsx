@@ -27,7 +27,7 @@ import {
   IconFingerprint,
   IconCoin,
   IconChevronDown,
-} from "@tabler/icons";
+} from "@tabler/icons-react";
 import "./navigacija.css";
 import React from "react";
 import FoodSprintLogo from "./FoodSprintLogo";

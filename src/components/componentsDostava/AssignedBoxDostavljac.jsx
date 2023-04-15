@@ -12,7 +12,7 @@ import {
   IconHandGrab,
   IconTruckDelivery,
   IconPackage,
-} from "@tabler/icons";
+} from "@tabler/icons-react";
 
 function AssignedBoxDostavljac({
   orderId,

@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import { authApiSlice } from "./authApiSlice";
 import { selectCurrentToken } from "./authSlice";
 import { Input } from "@mantine/core";
-//import { IconLock, IconAt } from "@tabler/icons";
+//import { IconLock, IconAt } from "@tabler/icons-react";
 import { Checkbox } from "@mantine/core";
 
 const Login = () => {

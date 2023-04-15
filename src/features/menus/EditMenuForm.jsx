@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSave, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { FileInput } from "@mantine/core";
-import { IconUpload } from "@tabler/icons";
+import { IconUpload } from "@tabler/icons-react";
 const EditMenuForm = ({ menu, users }) => {
   const [updateMenu, { isLoading, isSuccess, isError, error }] =
     useUpdateMenuMutation();

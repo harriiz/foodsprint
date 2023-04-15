@@ -8,7 +8,7 @@ import {
   IconHandGrab,
   IconTruckDelivery,
   IconPackage,
-} from "@tabler/icons";
+} from "@tabler/icons-react";
 import { useState } from "react";
 import { useEffect } from "react";
 function OrderBoxDostavljeno({

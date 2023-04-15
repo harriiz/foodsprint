@@ -28,7 +28,7 @@ import {
   IconFingerprint,
   IconCoin,
   IconChevronDown,
-} from "@tabler/icons";
+} from "@tabler/icons-react";
 import { Avatar } from "@mantine/core";
 import FoodSprintLogoMain from "./FoodSprintLogoMain";
 import ProfileAvatar from "./ProfileAvatar";

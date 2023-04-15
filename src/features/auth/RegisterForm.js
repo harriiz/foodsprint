@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { Input } from "@mantine/core";
-//import { IconLock, IconAt } from "@tabler/icons";
+//import { IconLock, IconAt } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 function RegisterForm() {
   const [username, setUsername] = useState("");

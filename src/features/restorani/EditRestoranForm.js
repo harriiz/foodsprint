@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSave, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import "./editRestoranForm.css";
 import { FileInput } from "@mantine/core";
-import { IconUpload } from "@tabler/icons";
+import { IconUpload } from "@tabler/icons-react";
 const EditRestoranForm = ({ restoran, users }) => {
   const [updateRestoran, { isLoading, isSuccess, isError, error }] =
     useUpdateRestoranMutation();

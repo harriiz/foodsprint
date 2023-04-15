@@ -15,8 +15,7 @@ import {
   IconTruckDelivery,
   IconChefHat,
   IconPackage,
-} from "@tabler/icons";
-import { MantineLogo } from "@mantine/ds";
+} from "@tabler/icons-react";
 import "../componentsPanel/navbarAdmin.css";
 import { useNavigate, useLocation } from "react-router";
 import { Link } from "react-router-dom";

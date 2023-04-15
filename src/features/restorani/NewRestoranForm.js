@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 import { selectCurrentToken } from "../auth/authSlice";
 import axios from "axios";
 import { Notification } from "@mantine/core";
-import { IconCheck, IconX } from "@tabler/icons";
+import { IconCheck, IconX } from "@tabler/icons-react";
 const NewRestoranForm = ({ users }) => {
   const token = useSelector(selectCurrentToken);
   const [addNewRestoran, { isLoading, isSuccess, isError, error }] =

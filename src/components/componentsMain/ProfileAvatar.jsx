@@ -12,7 +12,7 @@ import {
   IconMessageCircle,
   IconTrash,
   IconArrowsLeftRight,
-} from "@tabler/icons";
+} from "@tabler/icons-react";
 import { Avatar } from "@mantine/core";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
