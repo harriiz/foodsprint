@@ -12,7 +12,6 @@
     "@mantine/ds": "^5.10.1",
     "@mantine/hooks": "^5.10.1",
     "@mantine/prism": "^5.10.1",
-    "@putout/plugin-remove-unused-variables": "^4.2.0",
     "@reduxjs/toolkit": "^1.9.1",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
