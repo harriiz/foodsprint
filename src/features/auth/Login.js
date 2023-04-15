@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import { authApiSlice } from "./authApiSlice";
 import { selectCurrentToken } from "./authSlice";
 import { Input } from "@mantine/core";
-import { IconLock, IconAt } from "@tabler/icons";
+//import { IconLock, IconAt } from "@tabler/icons";
 import { Checkbox } from "@mantine/core";
 
 const Login = () => {
@@ -82,7 +82,7 @@ const Login = () => {
           <form className="form" onSubmit={handleSubmit}>
             <div className="inputs">
               <Input
-                icon={<IconAt />}
+                //   icon={<IconAt />}
                 placeholder="Korisničko ime"
                 radius="md"
                 size="xl"
@@ -96,7 +96,7 @@ const Login = () => {
                 className="input"
               />
               <Input
-                icon={<IconLock />}
+                //      icon={<IconLock />}
                 placeholder="Šifra"
                 radius="md"
                 size="xl"

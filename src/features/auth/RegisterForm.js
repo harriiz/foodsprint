@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { Input } from "@mantine/core";
-import { IconLock, IconAt } from "@tabler/icons";
+//import { IconLock, IconAt } from "@tabler/icons";
 import { Link } from "react-router-dom";
 function RegisterForm() {
   const [username, setUsername] = useState("");
@@ -44,7 +44,7 @@ function RegisterForm() {
           <form className="form" onSubmit={handleSubmit}>
             <div className="inputs">
               <Input
-                icon={<IconAt />}
+                //   icon={<IconAt />}
                 placeholder="Korisničko ime"
                 radius="md"
                 size="xl"
@@ -57,7 +57,7 @@ function RegisterForm() {
                 className="input"
               />
               <Input
-                icon={<IconLock />}
+                //    icon={<IconLock />}
                 placeholder="Šifra"
                 radius="md"
                 size="xl"

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { Input } from "@mantine/core";
-import { IconLock, IconAt } from "@tabler/icons";
+//import { IconLock, IconAt } from "@tabler/icons";
 import { Link } from "react-router-dom";
 import { Modal, Button } from "@mantine/core";
 function RegisterRestoranForm() {
@@ -76,7 +76,7 @@ function RegisterRestoranForm() {
         </h3>
         <div className="restoranInputs">
           <Input
-            icon={<IconAt />}
+            //  icon={<IconAt />}
             placeholder="Naziv restorana"
             radius="md"
             size="lg"
@@ -89,7 +89,7 @@ function RegisterRestoranForm() {
             className="input"
           />
           <Input
-            icon={<IconAt />}
+            //    icon={<IconAt />}
             placeholder="Adresa restorana"
             radius="md"
             size="lg"
@@ -127,7 +127,7 @@ function RegisterRestoranForm() {
           <form className="form" onSubmit={handleClickSubmit}>
             <div className="inputs">
               <Input
-                icon={<IconAt />}
+                //    icon={<IconAt />}
                 placeholder="Korisničko ime"
                 radius="md"
                 size="xl"
@@ -140,7 +140,7 @@ function RegisterRestoranForm() {
                 className="input"
               />
               <Input
-                icon={<IconLock />}
+                //   icon={<IconLock />}
                 placeholder="Šifra"
                 radius="md"
                 size="xl"
