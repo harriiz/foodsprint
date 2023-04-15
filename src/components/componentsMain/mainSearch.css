@@ -1,0 +1,93 @@
+.inputContainerMain {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.mainInput {
+  margin-top: 10px;
+  padding: 14px;
+  font-size: 15px;
+  border: 0;
+  border-right: 0;
+  padding-left: 43px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  width: 450px;
+}
+
+.mainInput:focus {
+  outline: 0;
+}
+
+.modal {
+  z-index: 1000000000000000000;
+}
+
+.searchBtnMain {
+  display: flex;
+  background-color: #40c057;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 8px 30px;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 650px) {
+  .searchBtnMain {
+    padding: 10px 20px;
+    bottom: 4px;
+    top: 14px;
+  }
+}
+
+.faSearchMain {
+  position: absolute;
+  top: 23px;
+  left: 15px;
+  font-size: 22px;
+  color: #9b9b9b;
+}
+
+.searchNavigacija {
+  display: flex;
+  align-items: center;
+}
+
+.markerAdresa {
+  font-size: 25px;
+  padding-right: 8px;
+}
+
+.suggestions-container {
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  top: 55px;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  text-align: justify;
+  padding: 15px;
+}
+
+.suggestion {
+  border-bottom: 1px solid rgb(201, 199, 199);
+  transition: 0.3s;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.suggestion:hover {
+  background-color: rgba(240, 240, 240, 0.534);
+}
+
+.suggestions-container.hidden {
+  display: none;
+}

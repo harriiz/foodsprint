@@ -1,0 +1,12 @@
+.navbarAdmin {
+  height: 100vh;
+  background-color: #ececf6ce;
+}
+
+.logoAdmin {
+  width: 270px;
+}
+
+.panelGore {
+  background-color: red;
+}

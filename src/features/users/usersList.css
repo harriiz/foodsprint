@@ -1,0 +1,40 @@
+.table {
+  width: 50%;
+  border-collapse: collapse;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.table__thead {
+  background-color: #4caf50;
+  color: white;
+}
+
+.table__th {
+  text-align: left;
+  padding: 8px;
+}
+
+.table__td {
+  text-align: left;
+}
+
+.table__row:nth-child(even) {
+  background-color: #eeebeb;
+}
+
+.table__button {
+  border-radius: 5px;
+  margin: 5px;
+  border: 0;
+  padding: 10px;
+  background-color: #4caf50;
+  color: rgb(243, 238, 238);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.table__button:hover {
+  background-color: #209224;
+}

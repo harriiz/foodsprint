@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.infoCheckout {
+  font-family: "Open Sans", sans-serif;
+  padding: 40px;
+  color: #2b2b2b;
+}
+
+.licniNaslov {
+  text-align: left;
+}
+
+.titleCheckout {
+  font-weight: 1000;
+  font-size: 34px;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeIcn {
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 10px;
+
+  background-color: rgba(137, 233, 137, 0.315);
+}
+
+.headerImg {
+  width: 300px;
+}
+
+.label {
+  text-align: left;
+}
+
+.licniPodaci {
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.licniInput {
+  padding-right: 100px;
+  padding-top: 25px;
+}
+
+.stanInput {
+  width: 100px;
+}
+
+.infoCheckout input {
+  width: 340px;
+}
+
+.imePrezime {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  padding-bottom: 10px;
+}
+
+.telmail {
+  display: flex;
+  gap: 60px;
+}
+
+.adresaInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mjestoContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.telmail1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.licniPodaci {
+  display: flex;
+}
+
+.adrulica {
+  display: flex;
+  gap: 40px;
+}
+
+.licniInput {
+  padding-right: 100px;
+}
+
+.adresaReal {
+  padding-bottom: 10px;
+}
+
+.adresaReal input {
+  width: 740px;
+}
+
+.naruciButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.naruciBtn {
+  width: 200px;
+}
+
+.modalcic {
+  z-index: 10000000000000000000000000000;
+}
+
+.modalcic span {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+
+.uspjesna {
+  margin-left: 5px;
+  color: green;
+}
+
+.success-animation {
+  margin: 20px auto 40px auto;
+}
+
+.checkmark {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #4bb71b;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #4bb71b;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  margin: 0 auto;
+}
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #4bb71b;
+  fill: #fff;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #4bb71b;
+  }
+}

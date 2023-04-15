@@ -1,0 +1,161 @@
+.asideMain {
+  background-color: white;
+  top: 90px;
+  border-radius: 80px 0 0 80px;
+}
+
+.cartItemInfo {
+  background-color: rgb(241, 255, 240);
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.cartItemName {
+  font-size: 1.1em;
+}
+
+.cartItemPrice {
+  color: rgb(109, 106, 106);
+  margin-bottom: 5px;
+}
+
+.cartItemFullPrice {
+  font-weight: 650;
+}
+
+.cartItems {
+  margin: 10px;
+}
+
+.cartItemImg {
+  width: 105px;
+  height: 85px;
+  border-radius: 25px;
+
+  align-self: center;
+}
+
+.imgItemContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.cartItemCalc {
+  display: flex;
+  gap: 120px;
+}
+
+.cartItemCalc2 {
+  display: flex;
+  gap: 6px;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e6e6;
+  margin: 20px 12px;
+}
+
+.cartItemPrice {
+  text-align: left;
+}
+
+.cartItemFullPrice {
+  align-self: flex-end;
+  margin-bottom: 5px;
+}
+
+.cartItemAdd {
+  border: 0;
+  border-radius: 10px;
+  padding: 0 8px;
+  background-color: rgba(118, 255, 118, 0.301);
+  color: green;
+  font-weight: 610;
+  cursor: pointer;
+}
+
+.cartItemNumber {
+  color: rgb(4, 88, 4);
+  font-weight: 610;
+}
+
+.mojaNarudzba {
+  display: flex;
+  margin-top: 4px;
+  align-self: center;
+}
+.korpaContainer {
+  padding: 15px 20px;
+  padding-bottom: 13px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-bottom: 1px solid #e7e5e5;
+}
+
+.korpaContainer img {
+  width: 70px;
+  height: 70px;
+}
+
+.mojaKorpa {
+  margin-right: 5px;
+  font-weight: 400;
+}
+
+.ukupnoCheckout {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px;
+}
+
+.ukupnoCheckout h3 {
+  font-weight: 550;
+  font-size: 22px;
+  color: #242323;
+}
+
+.ukupnoCheckout {
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e7e5e5;
+}
+
+.checkoutBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.checkoutBtn {
+  border: 0;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 17px 65px;
+  background-color: #28ce84;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: 0.2s;
+}
+
+.checkoutBtn:hover {
+  background-color: rgb(10, 141, 82);
+}
+
+.kupiArrowCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrowIco {
+  margin-top: 2px;
+  font-size: 22px;
+}

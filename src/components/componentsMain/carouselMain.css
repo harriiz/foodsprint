@@ -1,0 +1,68 @@
+.carouselBody {
+  width: 1250px;
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+}
+
+.carouselSlide {
+  border-radius: 30px;
+}
+
+.carouselCard {
+  position: relative;
+}
+
+.carouselCard button {
+  border: 0;
+  font-weight: 600;
+  color: rgb(22, 22, 22);
+  background-color: #f7f7f7;
+  padding: 10px 25px;
+  position: absolute;
+  cursor: pointer;
+  top: 68%;
+  border-radius: 15px;
+  right: 42%;
+}
+
+@media only screen and (max-width: 1750px) {
+  .carouselBody {
+    width: 625px;
+  }
+  .carouselBody img {
+    margin-left: 13px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .carouselBody {
+    width: 440px;
+    height: 176px;
+    margin-right: 17px;
+  }
+
+  .carouselSlide {
+    width: 440px;
+    height: 176px;
+  }
+
+  .carouselBody img {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .carouselBody {
+    width: 350px;
+    height: 140px;
+    margin-left: 2px;
+  }
+
+  .carouselSlide {
+    width: 350px;
+    height: 140px;
+  }
+  .carouselBody img {
+    margin-left: 0;
+  }
+}

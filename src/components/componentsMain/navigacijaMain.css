@@ -1,0 +1,58 @@
+.navMain {
+  padding: 0 40px;
+  max-width: 1820px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navSticked {
+  position: fixed;
+  top: 0;
+  margin-bottom: 100px;
+  width: 100%;
+  z-index: 10000000000;
+}
+
+.mainSearchCont {
+  display: flex;
+  margin: 0 auto;
+}
+
+.avatar {
+  cursor: pointer;
+
+  overflow: visible;
+}
+
+.notif {
+  padding-right: 5px;
+}
+
+@media only screen and (max-width: 980px) {
+  .avatarNotif {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .logoImg {
+    display: none;
+  }
+  .mainSearchCont {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .inputContainerMain {
+    width: 270px;
+  }
+
+  .searchBtnMain {
+    padding: 8px 30px;
+  }
+
+  .navMain {
+    padding: 0;
+  }
+}

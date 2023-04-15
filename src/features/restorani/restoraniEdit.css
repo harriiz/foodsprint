@@ -1,0 +1,61 @@
+.editButton {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 15px;
+  background-color: #d2f1d9;
+  color: green;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.editButton:hover {
+  background-color: #abe4b8;
+  color: rgb(3, 90, 3);
+}
+
+.restoranEditCardBox {
+  padding-bottom: 85px;
+  background-color: white;
+}
+
+.restoranInformacije {
+  align-items: center;
+}
+
+div:has(.restoranEditCardBox) {
+  display: flex;
+
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ownerLijevo {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restoranOwner {
+  flex-direction: column;
+}
+
+.rstrnCard {
+  margin: 20px 0;
+}
+
+.novoJeloBtn {
+  max-width: 250px;
+}
+
+.urediIzbrisiJelo {
+  margin-top: 40px;
+
+  text-align: center;
+}

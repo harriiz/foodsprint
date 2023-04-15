@@ -1,0 +1,13 @@
+.restoranBody > div {
+  background-color: #ffffff;
+  max-width: 1250px;
+  margin: 50px auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.editRestoranBtn {
+  background-color: aqua;
+}
