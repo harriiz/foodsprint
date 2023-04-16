@@ -6,8 +6,8 @@ import { faSave, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { ROLES } from "../../config/roles";
 import "./editUserForm.css";
 
-const USER_REGEX = /^[A-z]{3,20}$/;
-const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/;
+const USER_REGEX = /^[a-zA-Z0-9_-]{3,20}$/;
+const PWD_REGEX = /^[A-zA-Z0-9!@#$%]{6,20}$/;
 
 const EditUserFormProfil = ({ user }) => {
   const [updateUser, { isLoading, isSuccess, isError, error }] =
@@ -95,7 +95,7 @@ const EditUserFormProfil = ({ user }) => {
           </div>
         </div>
         <label className="form__label" htmlFor="username">
-          Korisničko ime: <span className="nowrap">[3-20 karaktera]</span>
+          Korisničko ime: <span className="nowrap">[Najmanje 5 karaktera]</span>
         </label>
         <input
           className={`form__input ${validUserClass}`}

@@ -10,3 +10,8 @@
 .panelGore {
   background-color: red;
 }
+
+#linkPanel {
+  width: 100%;
+  padding: 15px 5px;
+}

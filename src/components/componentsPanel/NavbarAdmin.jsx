@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createStyles, Navbar, Group, Code } from "@mantine/core";
+import { createStyles, Navbar, Group, Code, getStylesRef } from "@mantine/core";
 import {
   IconBellRinging,
   IconFingerprint,
@@ -24,8 +24,8 @@ import { Link } from "react-router-dom";
 function NavbarAdmin() {
   const navigate = useNavigate();
   const location = useLocation();
-  const useStyles = createStyles((theme, _params, getRef) => {
-    const icon = getRef("icon");
+  const useStyles = createStyles((theme, _params) => {
+    const icon = getStylesRef("icon");
     return {
       header: {
         paddingBottom: theme.spacing.md,
@@ -120,6 +120,7 @@ function NavbarAdmin() {
       const isActive = item.link === location.pathname;
       return (
         <Link
+          id="linkPanel"
           className={cx(classes.link, {
             [classes.linkActive]: isActive,
           })}

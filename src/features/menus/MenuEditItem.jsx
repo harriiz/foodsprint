@@ -35,9 +35,7 @@ function MenuItem({ naziv, cijena, id, kategorija, image }) {
         <div className="menuItemOstalo">
           <div className="boxOpis">
             <h3 className="menuTitle">{naziv}</h3>
-            <p>
-              {kategorija} najbolji u našem restoranu po atraktivnim cijenama
-            </p>
+            <p>{kategorija}</p>
           </div>
           <p className="menuCijena">KM {cijena}</p>
 

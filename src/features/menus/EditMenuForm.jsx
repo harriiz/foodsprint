@@ -47,7 +47,6 @@ const EditMenuForm = ({ menu, users }) => {
 
   const onSaveMenuClicked = async (e) => {
     if (canSave) {
-      console.log(".id:" + menu.id + "/._id:" + menu._id);
       await updateMenu({
         id: menu.id,
         restoran: restoranId,
@@ -129,7 +128,7 @@ const EditMenuForm = ({ menu, users }) => {
           />
 
           <label className="form-label" htmlFor="form4Example2">
-            Image
+            Slika jela
           </label>
         </div>
 

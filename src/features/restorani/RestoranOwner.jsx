@@ -138,7 +138,7 @@ const RestoranOwner = () => {
                   className="form-control"
                 />
                 <label className="form-label" htmlFor="form4Example2">
-                  Image
+                  Slika jela
                 </label>
               </div>
 

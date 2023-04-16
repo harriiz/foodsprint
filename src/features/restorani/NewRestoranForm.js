@@ -144,7 +144,7 @@ const NewRestoranForm = ({ users }) => {
               className="form-control"
             />
             <label className="form-label" htmlFor="form4Example2">
-              Image
+              Slika restorana
             </label>
           </div>
 

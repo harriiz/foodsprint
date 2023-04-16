@@ -15,8 +15,8 @@ function DostavaComponent() {
   const idProvjera = userId;
   const user = useSelector((state) => selectUserById(state, id));
   const orderCheck = useSelector((state) => selectOrderById(state, id));
+  const orders1 = useSelector(selectAllOrders);
 
-  console.log("user" + userId);
   const {
     data: orders,
     isLoading,

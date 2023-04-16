@@ -178,7 +178,7 @@ const EditRestoranForm = ({ restoran, users }) => {
           />
 
           <label className="form-label" htmlFor="form4Example2">
-            Image
+            Slika restorana
           </label>
         </div>
 

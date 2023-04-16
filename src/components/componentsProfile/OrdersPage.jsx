@@ -36,13 +36,10 @@ function OrdersPage() {
   const navigate = useNavigate();
 
   if (!isLoading && !isError && orders) {
-    const { ids, entities } = orders;
-    let matches = [];
-    for (let key1 in entities) {
-      if (entities[key1].userId === id) {
-        matches.push({ ...entities[key1], orderId: key1 });
-      }
-    }
+    const { entities } = orders;
+    const matches = Object.values(entities)
+      .filter((entity) => entity.userId === id)
+      .map((entity) => ({ ...entity, orderId: entity.id }));
 
     return (
       <>
@@ -60,14 +57,17 @@ function OrdersPage() {
         </Button>
         <Modal
           size="m"
+          radius={25}
           opened={openedEdit}
           onClose={() => setOpenedEdit(false)}
-          title="Dostavljene narudžbe"
           centered
         >
           <EditUserProfil user={user} />
         </Modal>
-        <div className="divParent">
+        <div
+          className="divParent"
+          style={{ height: "32vh", overflowY: "scroll" }}
+        >
           {matches
             .filter((match) => match.status !== "Dostavljeno")
             .map((match, index) => (
@@ -98,6 +98,7 @@ function OrdersPage() {
             opened={opened}
             onClose={() => setOpened(false)}
             title="Dostavljene narudžbe"
+            radius={25}
             centered
           >
             {matches

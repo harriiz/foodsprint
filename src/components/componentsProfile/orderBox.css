@@ -13,9 +13,7 @@
 }
 
 .divParent {
-  height: 22vw;
-  overflow-y: scroll;
-  padding: 35px;
+  padding: 25px;
   margin-top: 10px;
 }
 
@@ -38,4 +36,8 @@ div:has(.divNarudzbe) {
 
 .divNarudzbe h2 {
   margin-top: 15px;
+}
+
+.mantine-xiucpp {
+  padding: 0px;
 }
