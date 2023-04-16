@@ -13,8 +13,8 @@ FoodSprint olakšava proces naručivanja hrane online, omogućavajući kupcima d
 
 ## Demo
 [Live demo](https://foodsprint.onrender.com)
-![demo](src/components/componentsHero/slike/Screenshot_5.png/Screenshot_5.png?raw=true "Title")
-![demo][https://imgur.com/a/lqQlVfy]
+![demo](src/components/componentsHero/slike/Screenshot_5.png?raw=true "Title")
+![demo][https://github.com/harriiz/foodsprint/blob/1bbfac4c5466e9454d6d781c694f728715bd20dc/src/components/componentsHero/slike/Screenshot_5.png]
 ## Features
 
 ### Korisničko sučelje 
