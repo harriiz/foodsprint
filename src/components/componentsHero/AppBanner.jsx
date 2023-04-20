@@ -14,13 +14,11 @@ function AppBanner() {
       <div className="appBannerDesno">
         <h1 className="appBannerTitle">Preuzmite našu aplikaciju!</h1>
         <p className="appBannerTekst">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
-          saepe aut fugiat itaque. Itaque rerum vel cum maxime aspernatur quos
-          neque, est debitis hic corrupti ea deserunt totam inventore ullam!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          tempora, quae optio, nostrum magni id alias accusantium accusamus
-          dignissimos totam deserunt repudiandae? Mollitia, quae. Optio vitae
-          maiores corporis provident deserunt.
+          Ako želite koristiti FoodSprint aplikaciju za naručivanje hrane iz
+          svojih omiljenih restorana, jednostavno morate posjetiti naš web sajt
+          i preuzeti aplikaciju. Aplikacija je besplatna i dostupna je na web
+          stranici. Nakon preuzimanja aplikacije, možete se registrirati ili
+          prijaviti sa postojećim računom.
         </p>
         <div className="appBannerBtn">
           <div className="qrBtn">
