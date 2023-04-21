@@ -19,7 +19,7 @@ function RegisterRestoranForm() {
     e.preventDefault();
 
     // Send a POST request to the /register route with the form data
-    fetch("https://foodsprint-backend.onrender.com/register", {
+    fetch("http://localhost:3500/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

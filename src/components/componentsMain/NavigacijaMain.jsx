@@ -18,6 +18,7 @@ import {
   Collapse,
   ScrollArea,
   MantineProvider,
+  Modal,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -41,16 +42,19 @@ import {
   faS,
   faArrowDown,
   faL,
+  faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import MainSearch from "./MainSearch";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import AsideMain from "../../features/menus/AsideRestoran";
+import AsideKorpa from "./AsideKorpa";
 
 function NavigacijaMain() {
   function Avatar() {
     return <Avatar variant="filled" radius="md" color="green" />;
   }
-
+  const [modalOpen, setModalOpen] = useState(false);
   const useStyles = createStyles((theme) => ({
     link: {
       display: "flex",
@@ -153,84 +157,125 @@ function NavigacijaMain() {
         </Group>
       </UnstyledButton>
     ));
+    const boxShadows = {
+      boxShadow:
+        " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+      boxShadow:
+        "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+      position: "fixed",
+      bottom: "20px",
+      right: "20px",
+      backgroundColor: "#40c057",
+    };
 
     return (
-      <Box className="navSticked">
-        <Header height={90} px="md">
-          <Group position="apart" sx={{ height: "100%" }} className="navMain">
-            <Link to="/main">
-              <FoodSprintLogoMain className="logoMain" />
-            </Link>
-            <div className="mainSearchCont">
-              <MainSearch />
-            </div>
-            <div className="avatarNotif">
-              <Group className={classes.hiddenMobile}>
-                <Button variant="outline" color="green" radius="lg" size="md">
-                  <FontAwesomeIcon
-                    icon={faLocationDot}
-                    className="markerAdresa"
-                  />
-                  Adresa
-                </Button>
-                <UnstyledButton className="notif">
-                  <FontAwesomeIcon icon={faBell} color="green" size="lg" />
-                </UnstyledButton>
-                <ProfileAvatar />
-              </Group>
-            </div>
+      <>
+        <Box className="navSticked">
+          <Header height={90} px="md">
+            <Group position="apart" sx={{ height: "100%" }} className="navMain">
+              <Button
+                variant="outline"
+                color="green"
+                radius="xl"
+                size="lg"
+                onClick={() => setModalOpen(true)}
+                className={classes.hiddenDesktop}
+                style={boxShadows}
+              >
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  className=" markerAdresaMobitel"
+                  size="2x"
+                />
+              </Button>
+              <Link to="/main">
+                <FoodSprintLogoMain className="logoMain" />
+              </Link>
+              <div className="mainSearchCont">
+                <MainSearch />
+              </div>
+              <div className="avatarNotif">
+                <Group className={classes.hiddenMobile}>
+                  <Button
+                    variant="outline"
+                    color="green"
+                    radius="lg"
+                    size="md"
+                    onClick={() => setModalOpen(true)}
+                  >
+                    <FontAwesomeIcon
+                      icon={faCartShopping}
+                      className="markerAdresa"
+                    />
+                    Korpa
+                  </Button>
 
-            <Burger
-              opened={drawerOpened}
-              onClick={toggleDrawer}
-              className={classes.hiddenDesktop}
-            />
-          </Group>
-        </Header>
+                  <ProfileAvatar />
+                </Group>
+              </div>
 
-        <Drawer
-          opened={drawerOpened}
-          onClose={closeDrawer}
-          size="100%"
-          padding="md"
-          title="Navigation"
-          className={classes.hiddenDesktop}
-          zIndex={1000000}
+              <Burger
+                opened={drawerOpened}
+                onClick={toggleDrawer}
+                className={classes.hiddenDesktop}
+              />
+            </Group>
+          </Header>
+
+          <Drawer
+            opened={drawerOpened}
+            onClose={closeDrawer}
+            size="100%"
+            padding="md"
+            title="Navigation"
+            className={classes.hiddenDesktop}
+            zIndex={1000000}
+          >
+            <ScrollArea sx={{ height: "calc(100vh - 60px)" }} mx="-md">
+              <Divider
+                my="sm"
+                color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
+              />
+
+              <a href="#" className={classes.link}>
+                Početna
+              </a>
+              <UnstyledButton className={classes.link} onClick={toggleLinks}>
+                <Center inline>
+                  <Box component="span" mr={5}>
+                    Restorani
+                  </Box>
+                  <IconChevronDown size={16} color={theme.fn.primaryColor()} />
+                </Center>
+              </UnstyledButton>
+              <Collapse in={linksOpened}>{links}</Collapse>
+              <a href="#" className={classes.link}>
+                Panel
+              </a>
+              <a href="#" className={classes.link}>
+                Odjava
+              </a>
+
+              <Divider
+                my="sm"
+                color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
+              />
+
+              <Group position="center" grow pb="xl" px="md"></Group>
+            </ScrollArea>
+          </Drawer>
+        </Box>
+        <Modal
+          opened={modalOpen}
+          onClose={() => setModalOpen(false)}
+          centered
+          className="modalKorpa"
+          size="sm"
+          radius="xl"
         >
-          <ScrollArea sx={{ height: "calc(100vh - 60px)" }} mx="-md">
-            <Divider
-              my="sm"
-              color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
-            />
-
-            <a href="#" className={classes.link}>
-              Početna
-            </a>
-            <UnstyledButton className={classes.link} onClick={toggleLinks}>
-              <Center inline>
-                <Box component="span" mr={5}>
-                  Restorani
-                </Box>
-                <IconChevronDown size={16} color={theme.fn.primaryColor()} />
-              </Center>
-            </UnstyledButton>
-            <Collapse in={linksOpened}>{links}</Collapse>
-            <a href="#" className={classes.link}>
-              Panel
-            </a>
-            <a href="#" className={classes.link}>
-              Odjava
-            </a>
-
-            <Divider
-              my="sm"
-              color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
-            />
-
-            <Group position="center" grow pb="xl" px="md"></Group>
-          </ScrollArea>
-        </Drawer>
-      </Box>
+          <AsideKorpa />
+        </Modal>
+      </>
     );
   }
   return HeaderMegaMenu();
