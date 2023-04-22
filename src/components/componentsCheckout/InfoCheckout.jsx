@@ -155,7 +155,7 @@ function InfoCheckout() {
           Narudžba <span className="uspjesna">uspješna</span>!
         </span>
       </Modal>
-      ;
+
       <div className="infoCheckout">
         <div className="header">
           <Link to="/main">
@@ -319,15 +319,20 @@ function InfoCheckout() {
             </h2>
           </div>
           <div className="cartItemsCheckout">
-            {cart.menus.map((cartItem) => (
-              <CheckoutItem
-                name={cartItem.naziv}
-                price={cartItem.cijena}
-                number={cartItem.quantity}
-                img={cartItem.image.url}
-                className="checkoutItem"
-              />
-            ))}
+            {cart.menus.map((cartItem) => {
+              const itemPrice = cartItem.quantity * cartItem.cijena;
+              console.log("hey" + itemPrice);
+              return (
+                <CheckoutItem
+                  name={cartItem.naziv}
+                  price={cartItem.cijena}
+                  number={cartItem.quantity}
+                  fullPrice={itemPrice}
+                  img={cartItem.image.url}
+                  className="checkoutItem"
+                />
+              );
+            })}
           </div>
         </div>
       </div>

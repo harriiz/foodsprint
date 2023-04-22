@@ -58,7 +58,7 @@ function MainSearch() {
     console.log(searchInput);
     for (let i = 0; i < restorani.length; i++) {
       if (searchInput.toLowerCase() === restorani[i].naziv.toLowerCase()) {
-        navigate(restorani[i].id);
+        navigate(`/main/${restorani[i].id}`);
         matchFound = true;
         console.log(
           restorani[i].naziv + "" + restorani[i].id + "" + searchInput
@@ -106,7 +106,7 @@ function MainSearch() {
                 <div
                   className="suggestion"
                   key={suggestion.id}
-                  onClick={() => navigate(suggestion.id)}
+                  onClick={() => navigate(`/main/${suggestion.id}`)}
                 >
                   {suggestion.naziv}
                 </div>

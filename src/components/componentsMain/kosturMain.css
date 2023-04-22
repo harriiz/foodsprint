@@ -76,12 +76,12 @@
 
 @media only screen and (max-width: 650px) {
   .kategorijaBox img {
-    width: 70px;
+    width: 90px;
     padding: 10px;
   }
 
   .kategorijaBox {
-    width: 110px;
+    width: 130px;
     font-size: 12px;
   }
 
@@ -92,5 +92,9 @@
 
   .kosturMain h1 {
     display: none;
+  }
+
+  .kategorijaTekst {
+    font-size: 15px;
   }
 }

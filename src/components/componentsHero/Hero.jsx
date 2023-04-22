@@ -10,8 +10,10 @@ import ProductCard from "./ProductCard";
 import AppBanner from "./AppBanner";
 import Faq from "./Faq";
 import Footer from "./Footer";
+import { Navigate, useNavigate } from "react-router";
 
 function Hero() {
+  const Navigate = useNavigate();
   return (
     <>
       <div className="haiBg">
@@ -29,10 +31,13 @@ function Hero() {
                 name=""
                 id=""
                 className="heroInput"
-                placeholder="Unesite vašu adresu"
+                placeholder="Unesite naziv restorana"
               />
               <FontAwesomeIcon icon={faLocationDot} className="faMarker" />
-              <button className="searchBtn">
+              <button
+                className="searchBtn"
+                onClick={() => Navigate("/prijava")}
+              >
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
                   className="faSearch"

@@ -27,7 +27,6 @@ function CarouselMain() {
               alt="Image 1"
               className="carouselSlide"
             />
-            <button>Naruči</button>
           </SplideSlide>
           <SplideSlide className="carouselCard">
             <img
@@ -35,7 +34,6 @@ function CarouselMain() {
               alt="Image 2"
               className="carouselSlide"
             />
-            <button>Naruči</button>
           </SplideSlide>
           <SplideSlide className="carouselCard">
             <img
@@ -43,7 +41,6 @@ function CarouselMain() {
               alt="Image 2"
               className="carouselSlide"
             />
-            <button>Naruči</button>
           </SplideSlide>
           <SplideSlide className="carouselCard">
             <img
@@ -51,7 +48,6 @@ function CarouselMain() {
               alt="Image 2"
               className="carouselSlide"
             />
-            <button>Naruči</button>
           </SplideSlide>
         </Splide>
       </div>

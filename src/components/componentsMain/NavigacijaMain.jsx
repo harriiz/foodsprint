@@ -49,11 +49,24 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import AsideMain from "../../features/menus/AsideRestoran";
 import AsideKorpa from "./AsideKorpa";
-
+import useAuth from "../../hooks/useAuth";
+import { Menu } from "@mantine/core";
+import {
+  IconUser,
+  IconBuildingStore,
+  IconAdjustmentsAlt,
+  IconTruckDelivery,
+  IconLogout,
+} from "@tabler/icons-react";
+import { useSendLogoutMutation } from "../../features/auth/authApiSlice";
 function NavigacijaMain() {
   function Avatar() {
     return <Avatar variant="filled" radius="md" color="green" />;
   }
+
+  const [sendLogout, { isLoading, isSuccess, isError, error }] =
+    useSendLogoutMutation();
+  const { isRestoran, isAdmin, isDostavljac } = useAuth();
   const [modalOpen, setModalOpen] = useState(false);
   const useStyles = createStyles((theme) => ({
     link: {
@@ -236,26 +249,42 @@ function NavigacijaMain() {
                 my="sm"
                 color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
               />
+              <Menu>
+                <Link to="/main/profil" className="link linkPrvi">
+                  <Menu.Item icon={<IconUser size={24} />}>
+                    Moj Profil
+                  </Menu.Item>
+                </Link>
+                {isRestoran && (
+                  <Link to="/restoranpanel" className="link">
+                    <Menu.Item icon={<IconBuildingStore size={24} />}>
+                      Restoran Panel
+                    </Menu.Item>
+                  </Link>
+                )}
+                {isAdmin && (
+                  <Link to="/panel" className="link">
+                    <Menu.Item icon={<IconAdjustmentsAlt size={24} />}>
+                      Admin Panel
+                    </Menu.Item>
+                  </Link>
+                )}
 
-              <a href="#" className={classes.link}>
-                Početna
-              </a>
-              <UnstyledButton className={classes.link} onClick={toggleLinks}>
-                <Center inline>
-                  <Box component="span" mr={5}>
-                    Restorani
-                  </Box>
-                  <IconChevronDown size={16} color={theme.fn.primaryColor()} />
-                </Center>
-              </UnstyledButton>
-              <Collapse in={linksOpened}>{links}</Collapse>
-              <a href="#" className={classes.link}>
-                Panel
-              </a>
-              <a href="#" className={classes.link}>
-                Odjava
-              </a>
-
+                {isDostavljac && (
+                  <Link to="/dostavljacpanel" className="link">
+                    <Menu.Item icon={<IconTruckDelivery size={24} />}>
+                      Dostavljac Panel
+                    </Menu.Item>
+                  </Link>
+                )}
+                <Menu.Item
+                  color="red"
+                  icon={<IconLogout size={24} />}
+                  onClick={sendLogout}
+                >
+                  Odjava
+                </Menu.Item>
+              </Menu>
               <Divider
                 my="sm"
                 color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}

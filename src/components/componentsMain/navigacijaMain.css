@@ -56,3 +56,11 @@
     padding: 0;
   }
 }
+
+.link > button {
+  text-decoration: none;
+}
+
+.linkPrvi > button {
+  padding-top: 30px !important;
+}

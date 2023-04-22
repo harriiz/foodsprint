@@ -14,7 +14,7 @@ function Faq() {
   const useStyles = createStyles((theme) => ({
     wrapper: {
       paddingTop: `calc(${theme.spacing.xl} * 2)`,
-      minHeight: rem(720),
+      minHeight: rem(700),
       backgroundImage: `radial-gradient(${
         theme.colors[theme.primaryColor][6]
       } 0%, ${theme.colors[theme.primaryColor][4]} 100%)`,
@@ -22,6 +22,9 @@ function Faq() {
       backgroundPosition: "top left",
       position: "relative",
       color: theme.black,
+      [theme.fn.smallerThan("sm")]: {
+        minHeight: rem(1000),
+      },
     },
 
     title: {

@@ -124,3 +124,17 @@
 .povratak:hover {
   background-color: rgb(197, 255, 195);
 }
+
+@media only screen and (max-width: 600px) {
+  .loginLijevo {
+    width: 220px;
+    padding: 85px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .loginLijevo {
+    width: 205px;
+    padding: 80px;
+  }
+}

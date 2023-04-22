@@ -248,7 +248,7 @@ function Navigacija() {
           onClose={closeDrawer}
           size="100%"
           padding="md"
-          title="Navigation"
+          title="FoodSprint"
           className={classes.hiddenDesktop}
           zIndex={1000000}
         >
@@ -258,19 +258,14 @@ function Navigacija() {
               color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
             />
 
-            <a href="#" className={classes.link}>
+            <a href="" className={classes.link}>
               Početna
             </a>
-            <UnstyledButton className={classes.link} onClick={toggleLinks}>
-              <Center inline>
-                <Box component="span" mr={5}>
-                  Restoran
-                </Box>
-                <IconChevronDown size={16} color={theme.fn.primaryColor()} />
-              </Center>
-            </UnstyledButton>
-            <Collapse in={linksOpened}>{links}</Collapse>
-            <a href="#" className={classes.link}>
+            <a href="/restoran-registracija" className={classes.link}>
+              Registruj Restoran
+            </a>
+
+            <a href="/dostavljac-registracija" className={classes.link}>
               Postani Dostavljač
             </a>
             <a href="#" className={classes.link}>
@@ -282,7 +277,7 @@ function Navigacija() {
               color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
             />
 
-            <Group position="center" grow pb="xl" px="md">
+            <Group position="center" px="md" spacing="xl">
               <Link to="/prijava">
                 <Button variant="default">Prijava</Button>
               </Link>

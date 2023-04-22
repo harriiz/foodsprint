@@ -57,16 +57,21 @@ function ItemsCheckout() {
           </h2>
         </div>
         <div className="cartItems">
-          {cart.menus.map((cartItem) => (
-            <CheckoutItem
-              name={cartItem.naziv}
-              price={cartItem.cijena}
-              number={cartItem.quantity}
-              fullPrice={cartItem.quantity * cartItem.cijena}
-              img={cartItem.image.url}
-              className="checkoutItem"
-            />
-          ))}
+          {cart.menus.map((cartItem) => {
+            const itemPrice = cartItem.quantity * cartItem.cijena;
+            console.log("hey" + itemPrice);
+            return (
+              <CheckoutItem
+                name={cartItem.naziv}
+                price={cartItem.cijena}
+                number={cartItem.quantity}
+                fullPrice={itemPrice}
+                img={cartItem.image.url}
+                className="checkoutItem"
+              />
+            );
+          })}
+          {/* ne treba postojat */}
         </div>
       </div>
       <div className="checkoutBtnContainer">

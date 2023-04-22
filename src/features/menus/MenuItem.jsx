@@ -59,7 +59,7 @@ function MenuItem({ naziv, cijena, id, kategorija, image }) {
             <button onClick={handleClick} className="kupiMenu">
               <FontAwesomeIcon
                 icon={faCircleChevronDown}
-                size="4x"
+                size="5x"
                 className="faIcon"
               />
               {/* <img

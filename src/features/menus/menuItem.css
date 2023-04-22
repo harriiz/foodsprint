@@ -105,6 +105,10 @@
 .faIcon {
   color: #40c057;
   transition: 0.3s;
+  position: absolute;
+  bottom: -25px;
+  background-color: white;
+  left: 39%;
 }
 
 .faIcon:hover {
