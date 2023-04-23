@@ -16,7 +16,7 @@ function RestoranHeader({
   return (
     <div className="restoranHeader">
       <div className="restoranHeaderLijevo">
-        <img src={restoranImg} alt="" className="restoranImg" />
+        <img src={restoranImg} alt="" className="restoranHeadImg" />
         <div className="restoranHeaderOpis">
           <h2 className="iconNaziv">
             <FontAwesomeIcon icon={faUtensils} />

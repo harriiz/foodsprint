@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@mantine/core";
 import resetCart from "../../app/cartRedux";
+import NavigacijaMain from "./NavigacijaMain";
 
 function InfoCheckout() {
   const navigate = useNavigate();
@@ -156,6 +157,7 @@ function InfoCheckout() {
         </span>
       </Modal>
 
+      <NavigacijaMain></NavigacijaMain>
       <div className="infoCheckout">
         <div className="header">
           <Link to="/main">

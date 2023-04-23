@@ -33,11 +33,13 @@
   font-size: 23px;
 }
 
+.restoranHeadImg,
 .restoranImg {
   width: 200px;
   height: 200px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
+
 .menuHeader {
   width: 77.5%;
 }
@@ -46,4 +48,78 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+@media only screen and (max-width: 1800px) {
+  .restoranHeader {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .restoranHeader {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .restoranHeader {
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .restoranHeader {
+    width: 100%;
+
+    object-fit: contain;
+  }
+
+  .restoranHeadImg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .restoranHeaderLijevo {
+    gap: 20px;
+  }
+
+  .iconNaziv:nth-child(1) {
+    font-size: 1.5rem !important;
+  }
+
+  .iconNaziv:nth-child(2) {
+    font-size: 1.3rem !important;
+  }
+
+  .iconNaziv:nth-child(3) {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .restoranHeadImg {
+    width: 130px;
+    height: 130px;
+    margin-left: 18px;
+  }
+
+  .restoranHeader {
+    height: 280px;
+  }
+
+  .restoranHeaderLijevo {
+    gap: 15px;
+  }
+
+  .iconNaziv:nth-child(1) {
+    font-size: 1.4rem !important;
+  }
+
+  .iconNaziv:nth-child(2) {
+    font-size: 1.2rem !important;
+  }
+
+  .iconNaziv:nth-child(3) {
+    font-size: 1.1rem !important;
+  }
 }

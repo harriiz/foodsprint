@@ -1,5 +1,4 @@
 .checkoutComponent {
-  display: flex;
   height: 100vh;
 }
 
@@ -11,4 +10,21 @@
   width: 30vw;
 
   background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1599px) {
+  .checkoutComponent {
+    display: block !important;
+    margin: 0 auto;
+  }
+  .checkoutMain {
+    display: block !important;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .checkoutMain {
+    width: 90vw;
+  }
 }

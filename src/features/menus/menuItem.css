@@ -135,8 +135,20 @@ legend {
   color: #3a3939;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1800px) {
   .menuItems {
-    margin-right: 0px;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .menuitems {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .menuItems {
+    display: flex;
   }
 }

@@ -19,6 +19,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  min-width: 370px;
 }
 
 .homeIcn {
@@ -57,7 +58,7 @@
 
 .imePrezime {
   display: flex;
-  justify-content: space-around;
+
   gap: 60px;
   padding-bottom: 10px;
 }
@@ -172,6 +173,11 @@
   animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
 }
 
+.telmail1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0;
@@ -192,5 +198,64 @@
 @keyframes fill {
   100% {
     box-shadow: inset 0px 0px 0px 30px #4bb71b;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .titleCheckout {
+    text-align: center;
+    padding-top: 35px;
+  }
+
+  .licniInput {
+    padding-right: 0;
+  }
+
+  .licniPodaci {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .imePrezime,
+  .telmail {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .adresaReal div input {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .headerImg {
+    width: 250px;
+  }
+
+  .homeIcn {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .infoCheckout {
+    padding: 0;
+    margin: 0;
+    padding-top: 40px;
+  }
+
+  .header {
+    min-width: 340px;
+  }
+
+  .headerImg {
+    margin-left: -10px;
+  }
+
+  .homeIcn {
+    margin-right: 5px;
   }
 }
