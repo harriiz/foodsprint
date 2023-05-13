@@ -13,13 +13,13 @@ function RegisterRestoranForm() {
 
   const [nazivZahtjev, setNazivZahtjev] = useState("");
   const [adresaZahtjev, setAdresaZahtjev] = useState("");
-  const [slikaZahtjev, setSlikaZahtjev] = useState("");
+  const [slikaZahtjev, setSlikaZahtjev] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Send a POST request to the /register route with the form data
-    fetch("https://foodsprint-backend.onrender.com//register", {
+    fetch("https://foodsprint-backend.onrender.com/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
