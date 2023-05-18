@@ -100,10 +100,10 @@ function Panel() {
             </div>
             <div className="resotraniLinkovi">
               <p>Uređivanje i dodavanje novih restorana:</p>
-              <Link to="/restoraniedit/new" className="link">
+              <Link to="/restorani" className="link">
                 <button className="novi rstrn">Novi Restoran</button>
               </Link>
-              <Link to="/restoraniedit" className="link">
+              <Link to="/restorani" className="link">
                 <button className="uredi rstrn">Uredi Restoran</button>
               </Link>
             </div>
@@ -119,7 +119,7 @@ function Panel() {
               </div>
               <div className="resotraniLinkovi">
                 <p>Uređivanje i dodavanje novih restorana:</p>
-                <Link to="/users/new" className="link">
+                <Link to="/users" className="link">
                   <button className="novi Krsnk">Novi Korisnik</button>
                 </Link>
                 <Link to="/users" className="link">
@@ -142,7 +142,7 @@ function Panel() {
                 <Link to="/narudzbe" className="link">
                   <button className="novi Nrdzb">Narudzbe</button>
                 </Link>
-                <Link to="/restoraniedit" className="link">
+                <Link to="/narudzbe" className="link">
                   <button className="uredi Nrdzb">Dostavljači</button>
                 </Link>
               </div>

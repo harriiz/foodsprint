@@ -12,6 +12,12 @@ body {
   padding-bottom: 65px;
 }
 
+@media only screen and (max-height: 770px) {
+  .featuresBody {
+    margin-top: 0;
+  }
+}
+
 .korak {
   padding: 40px;
   border-radius: 50px;

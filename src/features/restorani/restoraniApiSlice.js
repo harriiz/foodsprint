@@ -52,7 +52,7 @@ export const restoraniApiSlice = apiSlice.injectEndpoints({
     }),
     deleteRestoran: builder.mutation({
       query: ({ id }) => ({
-        // url: `/restorani`,
+        url: `/restorani`,
         method: "DELETE",
         body: { id },
       }),

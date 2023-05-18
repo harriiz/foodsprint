@@ -29,7 +29,7 @@ const EditMenuForm = ({ menu, users }) => {
       setRestoranId("");
       setKategorija("");
       setImage("");
-      navigate("/restoranpanel");
+      navigate("/menus");
     }
   }, [isSuccess, isDelSuccess, navigate]);
 
@@ -58,7 +58,7 @@ const EditMenuForm = ({ menu, users }) => {
     }
   };
 
-  const onDeleteMenuClicked = async () => {
+  const onDeleteMenuClicked = async (e) => {
     await deleteMenu({ id: menu.id });
   };
 

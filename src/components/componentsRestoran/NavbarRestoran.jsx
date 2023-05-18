@@ -106,7 +106,7 @@ function NavbarRestoran() {
 
   const data = [
     {
-      link: "/restoranpanel",
+      link: "/menus",
       label: "Restoran Panel",
       icon: IconChefHat,
     },

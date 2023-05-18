@@ -20,17 +20,8 @@ import RegisterComponent from "./features/auth/RegisterComponent";
 import { ROLES } from "./config/roles";
 import RequireAuth from "./features/auth/RequireAuth";
 import RestoranPage from "./features/menus/RestoranPage";
-import NewMenu from "./features/menus/NewMenu";
-import AdminPanel from "./components/componentsPanel/Panel";
-import NewOrder from "./features/orders/NewOrder";
-import OrderPage from "./components/componentsProfile/OrdersPage";
-import Narudzbe from "./components/componentsPanel/Narudzbe";
 import CheckoutPage from "./pages/checkoutPage/CheckoutPage";
-import Dostavljac from "./pages/DostavljacPage/Dostavljac";
-import RestoranCard from "./features/restorani/RestoranCard";
-import RestoranOwner from "./features/restorani/RestoranOwner";
 import Panel from "./components/componentsPanel/Panel";
-import OrdersPage from "./components/componentsProfile/OrdersPage";
 import RestoraniPanel from "./components/componentsPanel/RestoraniPanel";
 import KorisniciPanel from "./components/componentsPanel/KorisniciPanel";
 import NarudzbePanel from "./components/componentsPanel/NarudzbePanel";
@@ -82,7 +73,7 @@ function App() {
                 <Route
                   element={<RequireAuth allowedRoles={[ROLES.Restoran]} />}
                 >
-                  <Route path="restoranpanel" element={<PanelRstrn />} />
+                  <Route path="/menus" element={<PanelRstrn />} />
                 </Route>
                 <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
                   <Route path="/panel" element={<Panel />}></Route>

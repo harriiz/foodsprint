@@ -14,12 +14,10 @@ const cartSlice = createSlice({
       );
 
       if (existingItemIndex !== -1) {
-        // Update the existing item's quantity
         state.menus[existingItemIndex].quantity += action.payload.quantity;
         state.total +=
           state.menus[existingItemIndex].cijena * action.payload.quantity;
       } else {
-        // Add the new item to the cart
         state.quantity += action.payload.quantity;
 
         state.menus.push({

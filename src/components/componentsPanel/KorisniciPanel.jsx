@@ -7,6 +7,16 @@ import { Link } from "react-router-dom";
 import MainSearchPanel from "./MainSearchPanel";
 import { useState } from "react";
 import UsersList from "../../features/users/UsersList";
+import {
+  IconUsers,
+  IconTruckDelivery,
+  IconChefHat,
+  IconPackage,
+  IconTruck,
+  IconSettings,
+  IconBackspace,
+  IconArrowBack,
+} from "@tabler/icons-react";
 function KorisniciPanel() {
   return (
     <AppShell
@@ -24,6 +34,27 @@ function KorisniciPanel() {
       }
     >
       <UsersList />
+
+      <div className="ikonicePanel">
+        <Link to="/restorani">
+          <IconChefHat color="green" className="ikonaPnl homeIcn homeIcn2" />
+        </Link>
+        <Link to="/dostavljaci">
+          <IconTruckDelivery
+            color="green"
+            className="ikonaPnl homeIcn homeIcn2"
+          />
+        </Link>
+        <Link to="/narudzbe">
+          <IconPackage color="green" className="ikonaPnl homeIcn homeIcn2" />
+        </Link>
+        <Link to="/users">
+          <IconUsers color="green" className="ikonaPnl homeIcn homeIcn2" />
+        </Link>
+        <Link to="/panel">
+          <IconArrowBack color="green" className="ikonaPnl homeIcn homeIcn2" />
+        </Link>
+      </div>
     </AppShell>
   );
 }

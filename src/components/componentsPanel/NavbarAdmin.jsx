@@ -138,7 +138,7 @@ function NavbarAdmin() {
     });
 
     return (
-      <Navbar height={700} width={{ sm: 400 }} p="md" className="navbarAdmin">
+      <Navbar height={700} width={{ md: 400 }} p="md" className="navbarAdmin">
         <Navbar.Section grow>
           <Group className={classes.header} position="apart">
             <img

@@ -78,7 +78,7 @@ function ProfileAvatar() {
               <Menu.Item icon={<IconUser size={14} />}>Moj Profil</Menu.Item>
             </Link>
             {isRestoran && (
-              <Link to="/restoranpanel" className="link">
+              <Link to="/menus" className="link">
                 <Menu.Item icon={<IconBuildingStore size={14} />}>
                   Restoran Panel
                 </Menu.Item>

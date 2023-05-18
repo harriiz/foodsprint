@@ -65,7 +65,6 @@ const EditRestoranForm = ({ restoran, users }) => {
 
   const onDeleteRestoranClicked = async () => {
     await deleteRestoran({ id: restoran.id });
-    console.log("restoran" + restoran.id + " deleted");
   };
 
   const created = new Date(restoran.createdAt).toLocaleString("en-US", {

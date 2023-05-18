@@ -256,7 +256,7 @@ function NavigacijaMain() {
                   </Menu.Item>
                 </Link>
                 {isRestoran && (
-                  <Link to="/restoranpanel" className="link">
+                  <Link to="/menus" className="link">
                     <Menu.Item icon={<IconBuildingStore size={24} />}>
                       Restoran Panel
                     </Menu.Item>

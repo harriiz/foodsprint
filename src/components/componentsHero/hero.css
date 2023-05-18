@@ -160,7 +160,11 @@
   right: 0;
   filter: blur(125px);
 }
-
+@media only screen and (max-height: 770px) {
+  .custom-shape-divider-bottom-1673782236 {
+    bottom: 3px !important;
+  }
+}
 .custom-shape-divider-bottom-1673782236 {
   position: absolute;
   bottom: 10px;

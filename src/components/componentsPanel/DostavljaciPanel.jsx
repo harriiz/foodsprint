@@ -8,6 +8,18 @@ import MainSearchPanel from "./MainSearchPanel";
 import { useState } from "react";
 import UsersList from "../../features/users/UsersList";
 import DostavljacList from "../../features/users/DostavljacList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import {
+  IconUsers,
+  IconTruckDelivery,
+  IconChefHat,
+  IconPackage,
+  IconTruck,
+  IconSettings,
+  IconBackspace,
+  IconArrowBack,
+} from "@tabler/icons-react";
 function KorisniciPanel() {
   return (
     <AppShell
@@ -25,6 +37,27 @@ function KorisniciPanel() {
       }
     >
       <DostavljacList />
+
+      <div className="ikonicePanel">
+        <Link to="/restorani">
+          <IconChefHat color="green" className="ikonaPnl homeIcn homeIcn2" />
+        </Link>
+        <Link to="/dostavljaci">
+          <IconTruckDelivery
+            color="green"
+            className="ikonaPnl homeIcn homeIcn2"
+          />
+        </Link>
+        <Link to="/narudzbe">
+          <IconPackage color="green" className="ikonaPnl homeIcn homeIcn2" />
+        </Link>
+        <Link to="/users">
+          <IconUsers color="green" className="ikonaPnl homeIcn homeIcn2" />
+        </Link>
+        <Link to="/panel">
+          <IconArrowBack color="green" className="ikonaPnl homeIcn homeIcn2" />
+        </Link>
+      </div>
     </AppShell>
   );
 }

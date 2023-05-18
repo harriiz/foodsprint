@@ -5,6 +5,7 @@
   font-weight: 500;
   table-layout: fixed;
   text-align: center;
+  min-width: 900px;
 }
 
 .table__thead {
@@ -54,4 +55,16 @@ td:has(.btn-primary) {
 .btn-primary {
   width: 130px;
   margin: 15px;
+}
+
+main:has(.tableNarudzbe) {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 985px) {
+  main:has(.tableNarudzbe) {
+    padding-left: 0;
+    margin: 15px;
+  }
 }

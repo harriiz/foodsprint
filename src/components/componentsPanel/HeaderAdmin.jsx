@@ -15,6 +15,7 @@ function HeaderAdmin() {
         <h1 className="headerTitle">Admin Panel</h1>
         <p className="vrijemeAdmin">{vrijeme}</p>
       </div>
+
       <Link to="/main">
         <FontAwesomeIcon
           icon={faHome}

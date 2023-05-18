@@ -16,6 +16,13 @@ import { useEffect } from "react";
 import "../../features/users/usersList.css";
 import useAuth from "../../hooks/useAuth";
 import { useGetUsersQuery } from "../../features/users/usersApiSlice";
+import {
+  IconUsers,
+  IconTruckDelivery,
+  IconChefHat,
+  IconPackage,
+  IconArrowBack,
+} from "@tabler/icons-react";
 function RestoraniPanel() {
   const [modalOpen, setModalOpen] = useState(false);
   const {
@@ -94,7 +101,6 @@ function RestoraniPanel() {
           </div>
           <div className="tabelaZahtjevi">
             <h2>Zahtjevi za Restoran</h2>
-
             <table className="table table--users">
               <thead className="table__thead">
                 <tr>
@@ -118,6 +124,36 @@ function RestoraniPanel() {
           <h2>Uređivanje postojećih restorana</h2>
           <MainSearchPanel />
           <RestoraniEditList />{" "}
+          <div className="ikonicePanel">
+            <Link to="/restorani">
+              <IconChefHat
+                color="green"
+                className="ikonaPnl homeIcn homeIcn2"
+              />
+            </Link>
+            <Link to="/dostavljaci">
+              <IconTruckDelivery
+                color="green"
+                className="ikonaPnl homeIcn homeIcn2"
+              />
+            </Link>
+            <Link to="/narudzbe">
+              <IconPackage
+                color="green"
+                className="ikonaPnl homeIcn homeIcn2"
+              />
+            </Link>
+            <Link to="/users">
+              <IconUsers color="green" className="ikonaPnl homeIcn homeIcn2" />
+            </Link>
+            <Link to="/panel">
+              <IconArrowBack
+                color="green"
+                className="ikonaPnl homeIcn homeIcn2"
+              />
+            </Link>
+          </div>
+          ;
         </AppShell>
       </div>
     );

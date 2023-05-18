@@ -41,11 +41,11 @@ const Login = () => {
       navigate("/main");
     } catch (err) {
       if (!err.status) {
-        setErrMsg("No Server Response");
+        setErrMsg("Server error");
       } else if (err.status === 400) {
-        setErrMsg("Missing Username or Password");
+        setErrMsg("Pogrešna šifra i/ili korisničko ime");
       } else if (err.status === 401) {
-        setErrMsg("Unauthorized");
+        setErrMsg("Pogrešna šifra i/ili korisničko ime");
       } else {
         setErrMsg(err.data?.message);
       }

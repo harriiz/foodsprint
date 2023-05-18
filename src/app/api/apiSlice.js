@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { setCredentials } from "../../features/auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://foodsprint-backend.onrender.com/",
+  baseUrl: "http://localhost:3500",
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
     const token = getState().auth.token; // allows us to get current state of app,
@@ -39,7 +39,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
       result = await baseQuery(args, api, extraOptions); // retry original request, try original aces if deosnt work send refresh token which gives new acces tokena nd we retry original query
     } else {
       if (refreshResult?.error?.status === 403) {
-        refreshResult.error.data.message = "Your login has expired. ";
+        refreshResult.error.data.message = "Vaša sesija je istekla ";
         console.log("403");
       }
 
