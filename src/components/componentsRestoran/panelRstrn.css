@@ -5,3 +5,12 @@
 .imgDisplej {
   width: 250px;
 }
+
+@media only screen and (max-width: 985px) {
+  nav:has(.navbarRestoran) {
+    display: none;
+  }
+  main:has(.restoranOwner) {
+    padding-left: 0;
+  }
+}

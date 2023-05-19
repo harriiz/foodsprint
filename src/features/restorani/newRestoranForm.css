@@ -7,6 +7,10 @@
   border-radius: 10px;
 }
 
+.img-fluid {
+  width: 200px;
+}
+
 /* Form heading */
 .formNaslov {
   text-align: center;

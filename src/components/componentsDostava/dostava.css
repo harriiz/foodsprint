@@ -78,16 +78,14 @@ main:has(.dostupneDostave) {
   padding: 0;
 }
 
-/* <div className="orderBox">
-<p className="orderBoxId">Narudžba: {orderId}</p>
-<p className="orderBoxCijena">Cijena: {orderAmount}KM</p>
-<p className="orderBoxAdresa">Adresa: {adresa}</p>
-<p className="orderBoxDatum">Vrijeme: {vrijeme} </p>
-<p className="orderBoxStatus">Status: {status} </p>
-<button onClick={() => handlePreuzetoClick(orderId)}>Preuzeto</button>
-<button onClick={() => handleTranzitClick(orderId)}>U tranzitu</button>
-<button onClick={() => handleDostavljenoClick(orderId)}>
-  Dostavljeno
-</button>
-<h2>Trenutni status {dostavaStatus}</h2>
-</div> */
+@media only screen and (max-width: 985px) {
+  nav:has(.navbarAdmin) {
+    display: none;
+  }
+  main:has(.dostupneDostave) {
+    padding-left: 0;
+    display: flex;
+
+    flex-direction: column-reverse;
+  }
+}
